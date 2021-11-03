@@ -1,15 +1,12 @@
-import sqlite3
-# import time
+import sqlite3 #внесение записей в базу данных
 
 conn = sqlite3.connect('db.sqlite3') #cоздает соединение с БД.
 cursor = conn.cursor() #подготовка запроса с SQL ставим курсор для работы
 SQL ='''INSERT INTO main_auto ('id', 'name', 'price', 'brand_id')
-    VALUES (5, 'A8', 65, 2)
+        VALUES (6, 'ET', 105, 2)
 '''
-# print(dir(conn), 'object cursor')
 c=cursor.execute(SQL) #Выполнить запрос по SQL
-# time.sleep(10)
-# print(dir(c))
-# print(cursor.fetchall())
 conn.commit()
-# conn.close()
+conn.close()
+
+# SELECT name as x, price as y FROM main_auto

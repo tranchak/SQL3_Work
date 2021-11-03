@@ -5,8 +5,8 @@ cursor = conn.cursor() #подготовка запроса с SQL ставим 
 SQL ='''INSERT INTO main_auto ('id', 'name', 'price', 'brand_id')
     VALUES (4, 'SRX', 45, 1)
 '''
-print(dir(conn), 'object cursor')
-c=cursor.execute(SQL) #Выполнить запрос по SQL
+# print(dir(conn), 'object cursor')
+# c=cursor.execute(SQL) #Выполнить запрос по SQL
 # print(dir(c))
 # print(cursor.fetchall())
 conn.commit()
