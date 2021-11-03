@@ -1,5 +1,5 @@
-import psycopg2
-
+#создание таблицы в постгрес
+import psycopg2 #импорт драйвера для работы с постгрес
 conn = psycopg2.connect(dbname='lessondb', user='dima',
                         password='95462037', host='localhost')
 cursor = conn.cursor()
